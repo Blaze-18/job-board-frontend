@@ -22,7 +22,7 @@ useSeoMeta({
 })
 
 async function getJobs() {
-    await $fetch('http://127.0.0.1:8000/api/v1/jobs/my', {
+    await $fetch('https://blazeforyou.pythonanywhere.com/api/v1/jobs/my', {
         headers: {
             'Authorization': 'token ' + userStore.user.token,
             'Content-Type': 'application/json'

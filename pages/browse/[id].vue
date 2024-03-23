@@ -1,7 +1,7 @@
 <script setup>
 const route = useRoute()
 
-const {data: job} = await useFetch('http://127.0.0.1:8000/api/v1/jobs/' + route.params.id + '/')
+const {data: job} = await useFetch('https://blazeforyou.pythonanywhere.com/api/v1/jobs/' + route.params.id + '/')
 
 </script>
 <template>
